@@ -6,6 +6,17 @@ Creamos una constante que recibirá del useForm los valores y funciones para man
 const [ values, handleInputChange, reset ] = useForm( initialState );
 ```
 
+El initialState será un objeto con la estructura de nuestro formulario, normalmente vacío
+
+```
+const initialState = {
+    nombreCampo : '',
+    emailCampo : '',
+    edadCampo : 0
+};
+```
+
+
 Cuando creemos un input, es **necesario** ponerle un **name** que **debe ser el mismo** que la variable que va a tener su valor
 
 ```
